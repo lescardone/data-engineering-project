@@ -15,7 +15,6 @@ These properties, because of their age, are especially vulnerable to Shanghai's 
 
 The goal of this project is to construct a data pipeline for live weather updates (specifically humidity, temperature, and rain) so that property managers can visualize trends in weather and take preventative measures during stretches of high humidity and before heavy rainfall.
 
-------------------------------------
 
 
 ## DATA
@@ -26,7 +25,7 @@ I am currently pulling current weather conditions every minute, 7 day forecast p
 
 The data is stored in Google Firestore. The collections are categorized by the three types of API pulls (current, forecast, and history). Within each collection, a document is a dictionary of weather information for the time requested.
 
-------------------------------------
+
 
 
 ## ALGORITHMS/TOOLS
@@ -49,14 +48,14 @@ Google Cloud Scheduler
 Streamlit (in Progress)
 
 
-------------------------------------
+
 
 ## COMMUNICATION
 *VISUALIZATIONS*
 
 
 **Overview**
-![image](./viz/workflow_1.jpeg)
+![image](./project-checkpoints/final-writeup/viz/workflow_1.jpeg)
    
 1. API Call to OpenWeather
 2. Data stored in Google Firestore
@@ -66,11 +65,11 @@ Streamlit (in Progress)
 
 **API Calls:**
 
-![image](./viz/workflow_2.jpeg)
+![image](./project-checkpoints/final-writeup/viz/workflow_2.jpeg)
 
-![image](./viz/workflow_3.jpeg)
+![image](./project-checkpoints/final-writeup/viz/workflow_3.jpeg)
 
-![image](./viz/workflow_4.jpeg)
+![image](./project-checkpoints/final-writeup/viz/workflow_4.jpeg)
 
 1. Current weather data every minute
 2. 7-day Forecast data every day
@@ -80,4 +79,4 @@ Streamlit (in Progress)
 
 
 **DATA Query:**
-![image](./viz/shanghai_humidity.png)
+![image](./project-checkpoints/final-writeup/viz/shanghai_humidity.png)
