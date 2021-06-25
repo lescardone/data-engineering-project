@@ -3,6 +3,9 @@
 */.DS_Store
 */*/.DS_Store
 
+#Secrets
+/keys
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
