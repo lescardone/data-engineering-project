@@ -1,9 +1,0 @@
-# Function dependencies, for example:
-# package>=version
-
-firebase_admin
-google-cloud-storage
-google-cloud-secret-manager
-pyowm
-pytz
-datetime
