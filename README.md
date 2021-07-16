@@ -1,4 +1,4 @@
-# **MAINTAINING A LANE HOUSE RENTAL PROPERTY PORTFOLIO IN SHANGHAI**
+# **INTERACTIVE DASHBOARD FOR SHANGHAI PROPERTY MANAGERS**
 Leslie Cardone  
 June 25, 2021  
 Metis: Data Engineering
@@ -47,36 +47,40 @@ The data is stored in Google Firestore. The collections are categorized by the t
 - Streamlit deployed with Heroku
 
 
-## COMMUNICATION
-*VISUALIZATIONS*
 
+## PIPELINE OVERVIEW
 
-**Overview**
-![image](./presentation/project-checkpoints/final-writeup/viz/workflow_1.jpeg)
+**Workflow**
+
+![image](/images/workflow_1.jpeg)
    
-1. Automated API Call to OpenWeather with Google Cloud Functions/Scheduler
-2. Weather dictionaries stored in Google Firestore
-3. Data queries written in Google Cloud Function
-4. Queries triggered with HTTP when web app loads
-5. Data processed/transformed with pandas
-6. Data displayed with altair on Streamlit
+1. API Call to OpenWeather
+2. Data stored in Google Firestore
+3. Cleaned and processed with pandas
+4. Deployed to Streamlit with Heroku
 
 
 **API Calls:**
 
-![image](./presentation/project-checkpoints/final-writeup/viz/workflow_2.jpeg)
+![image](/images/workflow_2.jpeg)
 
-![image](./presentation/project-checkpoints/final-writeup/viz/workflow_3.jpeg)
+![image](/images/workflow_3.jpeg)
 
-![image](./presentation/project-checkpoints/final-writeup/viz/workflow_4.jpeg)
+![image](/images/workflow_4.jpeg)
 
+Scheduled with Cloud Scheduler:
 1. Current weather data every minute
 2. 7-day Forecast data every day
 3. 3-day history every hour
     - at the hour pulled, the history will show the weather condition for that hour the previous day, the day before, and two days before
 
 
-**DATA Query:**.  
+**DATA QUERY:**
 
+*Humidity % in Shanghai over the last 24 hours, coded by weather condition*
 
-![image](./presentation/project-checkpoints/final-writeup/viz/viz_01.png)
+![image](/images/viz_01.png)
+
+*Histogram of humidity % over the last 24 hours (counts are every minute)*
+
+![image](/images/viz_02.png)
